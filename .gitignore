@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+
+# macOS
+.DS_Store
+
+# Search script caches
+search_stateful_cache.jsonl
+search_front_cache.jsonl
