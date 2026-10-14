@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuts"
+version = "0.0.0"
+requires-python = ">=3.10"
+license = "MIT OR Apache-2.0"
+license-files = ["LICENSE-MIT", "LICENSE-APACHE"]
+
+[tool.setuptools]
+packages = ["cuts"]
+package-dir = {"cuts" = "src"}
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "python-flint"]
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cuts"]
